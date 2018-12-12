@@ -37,7 +37,7 @@ function clean {
 # main
 if [ $1 = "-h" -o $1 = "--help" ]
 then
-    echo "get-mp3 [[destino] origen]"
+    echo "get-mp3 your search query"
     exit 0
 else
     SEARCH=$(echo $@ | sed 's/ \+/+/g')
