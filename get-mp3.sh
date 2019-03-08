@@ -85,7 +85,7 @@ if [ -f .conf-gmp3 -a -r .conf-gmp3 ]
 then
     . .conf-gmp3
 else
-    echo "DIR=." > .conf-gmp3
+    echo "DIR=.\nFORMAT=mp3" > .conf-gmp3
 fi
 if [ $1 = "-h" -o $1 = "--help" ]
 then
@@ -93,10 +93,10 @@ then
     echo "Usage:  ./${0##*/} your search query"
     echo
     echo ~~~~~~~~~~~~~~~~~[ options ]~~~~~~~~~~~~~~~~~
-    echo "./${0##*/} --set-directory path/to/folder/"
+    echo "./${0##*/} --location path/to/folder/"
     exit 0
 else
-    if [ $# -eq 2 -a $1 = "--set-directory" ]
+    if [ $# -eq 2 -a $1 = "--location" ]
     then
         if [ ! -z "$2" -a -d "$2" ]
         then
@@ -108,10 +108,8 @@ else
             if [ $ANSWER = "y" -a "mkdir $2" ]
             then
                 mkdir "$2"
-                DIR="$2"
                 echo "DIR=$2" > .conf-gmp3
             fi
-
         fi
         echo new directory setted
         exit 0;
