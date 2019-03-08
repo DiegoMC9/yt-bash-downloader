@@ -3,6 +3,7 @@
 ## Linux Only
 ### Instalation
 **AUR**
+> Still working on it
 ```
 yaourt -S yt-bash-downloader
 ```
