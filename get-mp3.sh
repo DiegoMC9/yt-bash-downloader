@@ -89,11 +89,11 @@ else
 fi
 if [ $1 = "-h" -o $1 = "--help" ]
 then
-    echo -------------------------------------
-    echo "Usage: ./${0##*/} your search query"
+    echo -----------------[ get-mp3 ]-----------------
+    echo "Usage:  ./${0##*/} your search query"
     echo
-    echo ~~~~~~~~~~~~~[ options ]~~~~~~~~~~~~~
-    echo "--set-directory       path/to/folder/"
+    echo ~~~~~~~~~~~~~~~~~[ options ]~~~~~~~~~~~~~~~~~
+    echo "./${0##*/} --set-directory path/to/folder/"
     exit 0
 else
     if [ $# -eq 2 -a $1 = "--set-directory" ]
