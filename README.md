@@ -28,4 +28,4 @@ get-mp3. --set-directory [path to your music directory]
 
 ---------------------
 ### License GPLv3
->[READ IT](../blob/master/LICENSE)
+[READ IT](../blob/master/LICENSE)
