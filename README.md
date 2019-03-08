@@ -21,10 +21,10 @@ makepkg -si
 - **They are installed automatically with the aur installation
 ---------------------
 ### Usage: 
-./get-mp3.sh  this is a search
+get-mp3  this is a search
 ### Options
-./get-mp3.sh --set-directory [path to your music directory]
+get-mp3. --set-directory [path to your music directory]
 
 ---------------------
 ### License GPLv3
-[READ IT](../blob/master/LICENSE)
+>[READ IT](../blob/master/LICENSE)
