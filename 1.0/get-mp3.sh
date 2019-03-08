@@ -41,14 +41,14 @@ function options {
                 ;;
             "${OPTIONS[1]}")
                 download "${OPTIONS[1]}" ${URLS[1]}
-                mv "${OPTIONS[1]}" $DIR
+                mv "${OPTIONS[1]}.mp3" $DIR
                 echo -------------------------------------------
                 echo "Downloaded: ${OPTIONS[1]}.mp3"
                 break
                 ;;
             "${OPTIONS[2]}")
                 download "${OPTIONS[2]}" ${URLS[2]}
-                mv "${OPTIONS[2]}" $DIR
+                mv "${OPTIONS[2]}.mp3" $DIR
                 echo -------------------------------------------
                 echo "Downloaded: ${OPTIONS[2]}.mp3"
                 break

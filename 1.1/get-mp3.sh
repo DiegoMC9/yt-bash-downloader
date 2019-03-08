@@ -34,30 +34,26 @@ function options {
         case $opt in
             "${OPTIONS[0]}")
                 download "${OPTIONS[0]}" ${URLS[0]}
-                mv "${OPTIONS[0]}.mp3" $DIR
-                echo -------------------------------------------
-                echo "Downloaded: ${OPTIONS[0]}.mp3"
+                mv "${OPTIONS[0]}.$FORMAT" $DIR
+                SELECTED="${OPTIONS[0]}"
                 break
                 ;;
             "${OPTIONS[1]}")
                 download "${OPTIONS[1]}" ${URLS[1]}
-                mv "${OPTIONS[1]}" $DIR
-                echo -------------------------------------------
-                echo "Downloaded: ${OPTIONS[1]}.mp3"
+                mv "${OPTIONS[1]}.$FORMAT" $DIR
+                SELECTED="${OPTIONS[1]}"
                 break
                 ;;
             "${OPTIONS[2]}")
                 download "${OPTIONS[2]}" ${URLS[2]}
-                mv "${OPTIONS[2]}" $DIR
-                echo -------------------------------------------
-                echo "Downloaded: ${OPTIONS[2]}.mp3"
+                mv "${OPTIONS[2]}.$FORMAT" $DIR
+                SELECTED="${OPTIONS[2]}"
                 break
                 ;;
             "${OPTIONS[3]}")
                 download "${OPTIONS[3]}" ${URLS[3]}
-                mv "${OPTIONS[3]}.mp3" $DIR
-                echo -------------------------------------------
-                echo "Downloaded: ${OPTIONS[3]}.mp3"
+                mv "${OPTIONS[3]}.$FORMAT" $DIR
+                SELECTED="${OPTIONS[3]}"
                 break
                 ;;
             "exit")
@@ -68,6 +64,9 @@ function options {
                 ;;
         esac
     done
+    echo -------------------------------------------
+    echo "Downloaded: $SELECTED.$FORMAT"
+
     clean
     exit 0
 }
