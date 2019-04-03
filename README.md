@@ -8,6 +8,7 @@
 yaourt -S yt-bash-downloader
 ```
 **Manually**
+> Still working on it
 ```
 git clone https://github.com/DiegoMC9/yt-bash-downloader
 cd yt-bash-downloader
@@ -24,8 +25,10 @@ makepkg -si
 ### Usage: 
 get-mp3  this is a search
 ### Options
+'''
 get-mp3 --location path/to/folder/
 get-mp3 --format {best, aac, flac, mp3, m4a, opus, vorbis, wav}
+'''
 ---------------------
 ### License GPLv3
 [READ IT](../master/LICENSE)
