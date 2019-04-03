@@ -24,7 +24,7 @@ makepkg -si
 ### Usage: 
 get-mp3  this is a search
 ### Options
-get-mp3 --location path/to/folder/"
+get-mp3 --location path/to/folder/
 get-mp3 --format {best, aac, flac, mp3, m4a, opus, vorbis, wav}
 ---------------------
 ### License GPLv3
